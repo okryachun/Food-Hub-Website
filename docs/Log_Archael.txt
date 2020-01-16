@@ -1,0 +1,9 @@
+Archael dela Rosa
+11/26	8:30-9:30pm	
+(1.0 HR)	Init Account, UserDatabase Classes, TestSuite
+
+12/04	7:00-9:00pm
+(2.0 HR)	Update Search,Review Display and Create (HTML, Model)
+
+12/05	3:00-7:00pm
+(4.0 HR)	Updated Create (HTML, Model), Database: Local Storage, Product/Review

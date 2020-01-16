@@ -1,0 +1,49 @@
+----------------------------------------------------------------------------------------------------
+
+REVIEW CREATE BOX POSITION!!
+
+** NOTE **
+!! Use Barcode 'test', to test manual search to go to test product
+!! Had to change test database JSON, turned review classes to 'flat' JSON object so functions can read easy.
+
+** TO DO **
+[x] Need to Attach a Camera Search Function to Search Model and bridge with video function
+[x] Need to add 'Remove Review' to Product Display Model (if Privaledged)
+[x] Need to add Remove Review Functionality to Display Model
+[x] Product IMG (Keep, How to Add with HTML and Class)
+!! When Finalizing: Test all input conditions (out of bounds, bad char, empty, null)
+!! WHEN FINAL: Window Size
+
+!! Need to add multiple review by user check.
+!! score max enter 5
+[x] new product, add img source
+[x] push enter, search
+
+----------------------------------------------------------------------------------------------------
+12/05	AD
+** Updated Create Product
+[x] Added 'Create' Button to create product HTML
+[x] Added Create Product Functinoality to Create Model
+
+** Database Converted to Local Storage
+[x] Updated Database Classes (Load,Save)
+
+** Created Patching
+!! open Patch.html to patch in localstorage databases
+
+** Created New Review Pop Up
+[x] Added  'Add Review' (Popup) to Product Display HTML
+[x] Added Review Functionality to Display Model
+
+----------------------------------------------------------------------------------------------------
+12/04	AD
+** Updated Search Model
+[x] Added Manual Search (barcode found in db -> product display page, not found -> product create page) (passes barcode and user to URL)
+
+** Updated Product Model
+[x] Get Id from URL
+[x] Display Product properties into HTML
+-- [x] Calculate Average Rating
+-- [x] Display Basic Reviews
+
+----------------------------------------------------------------------------------------------------

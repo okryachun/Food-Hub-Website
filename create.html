@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FOODHUB - Create Product</title>
+	
+	<!-- SEMANTIC UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+	<!-- CSS -->
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="css/Create.css">
+	<!-- JS -->
+	<script src="js/global/html.js"></script>
+	<script src="js/global/array.js"></script>
+	<script src="js/Main.js"></script>
+</head>
+
+
+<body onload="main('create')">	<!-- Call and create the createModel from Main -->
+
+	<!-- Header -->
+	<div id='header' class="ui icon menu">
+		<div class="item">
+			<img src="img/logo.jpg" id="fh_logo_mini">
+		</div>
+		<div class="item" id="header_name"></div>
+		<div class="item" id="header_user"></div>
+		<div id='right_header' class='right menu'>
+			<a class="ui item" onclick="model.backSearch()">Return to Search</a>
+			<a class="ui item" onclick="LogOut()">Logout</a>
+		</div>
+	</div>
+
+	<!-- Form to add a product to the database -->
+    <div id="form">
+        <div id="form_text" class="ui form">
+            <h1 id="heading">Please Add This Product To Our System</h1>
+            <div class="field">
+                <label>Product Name</label>
+                <input type="text" id="product_name" placeholder="Product Name">
+            </div>
+            <div class="field">
+                <label>Product Image</label>
+                <input type="text" id="product_img" placeholder="Path to Img">
+            </div>
+            <div class="field">
+                <label>Calories</label>
+                <input type="number" id="calories" placeholder="Calories">
+            </div>
+            <div class="field">
+                <label>Fats</label>
+                <input type="number" id="fats" placeholder="Fats">
+            </div>
+            <div class="field">
+                <label>Carbohydrates</label>
+                <input type="number" id="carbohydrates" placeholder="Carbohydrates">
+            </div>
+            <div class="field">
+                <label>Protein</label>
+                <input type="number" id="protein" placeholder="Protein">
+            </div>
+        </div>
+    </div>
+    <div id="form">
+        <div id="form_text" class="ui form">
+            <div class="field">
+                <label>Rating</label>
+                <input type="number" id="rating" max="5" placeholder="Your Rating Out Of 5">
+            </div>
+            <div class="field">
+                <label>Review</label>
+                <input type="text" id="review" placeholder="Word Review">
+            </div>
+            <div class="field">
+		    		<!-- When the submit putton is pressed, call Create() -->
+				<div id="submit_button" onclick="model.Create()" class="ui teal button">Submit</div>	
+            </div>
+        </div>
+    </div>
+</body>
+</html>

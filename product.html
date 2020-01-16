@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FOODHUB - Product</title>
+	
+	<!-- SEMANTIC UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+	<!-- CSS -->
+    <link rel="stylesheet" href="css/Main.css">
+    <link rel="stylesheet" href="css/Product.css">
+	<!-- JS -->
+	<script src="js/global/html.js"></script>
+	<script src="js/global/array.js"></script>
+	<script src="js/Main.js"></script>
+	<script src="js/CreateReviewWindow.js"></script>
+</head>
+
+	<!-- Call and create productModel from Main -->
+<body onload="main('product')">
+
+	<!-- Header -->
+	<div id='header' class="ui icon menu">
+		<div class="item">
+			<img src="img/logo.jpg" id="fh_logo_mini">
+		</div>
+		<div class="item" id="header_name"></div>
+		<div class="item" id="header_user"></div>
+		<div id='right_header' class='right menu'>
+			<a class="ui item" onclick="model.backSearch()">Return to Search</a>
+			<a class="ui item" onclick="LogOut()">Logout</a>
+		</div>
+	</div>
+
+	<!-- Outline HTML for the product display -->
+	<div id="product_wrap">
+		<div class="ui segment" id="product_box">
+			<div class="ui vertical segments" id="product_info">
+				<div class="ui horizontal segments">
+					<div class="ui segments">
+						<img class="ui image" id="product_img">
+					</div>
+					<div class="ui segments">
+						<div class="ui segment" id="product_name" ></div>
+						<div class="ui segment" id="calories_num"> Calories:   <span id="calories"></span></div>
+						<div class="ui horizontal segments">
+							<div class="ui segment" id="fats_num"> Fats:   <span id="fats"></span></div>
+							<div class="ui segment" id="carbs"> Carbohydrates:  <span id="carbohydrates"></span></div>
+							<div class="ui segment" id="proteins_num"> Proteins:   <span id="proteins"></span></div>
+						</div>
+				</div>
+			</div>
+			<div class="ui vertical segments" id="review_section">
+				<div class="ui horizontal segments">
+					<div class="ui segment" id="review">Reviews</div>
+					<div class="ui segment">
+						<div class="ui segment" id="overall_rating">Overall Rating: <span id="overallRating"></span>/5</div>
+					</div>
+				</div>
+				<div class="ui segment" class="" id=''>
+					<div class="ui segment" id="reviews"></div>
+					<button class="ui teal button" onclick="model.CreatePopUpDisplay(document.getElementById('review_anchor'))">Add Review</button>
+					<div id="review_anchor"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

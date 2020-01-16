@@ -1,0 +1,24 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#fh_logo_mini {
+	position:relative;
+	width:30px;
+	height:30px;
+    border-radius: 3px;
+}
+#header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index:50;
+}
+
+#right_header {
+	text-decoration:underline;
+}

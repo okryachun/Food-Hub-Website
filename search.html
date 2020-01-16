@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FOODHUB - Search</title>
+	
+	<!-- SEMANTIC UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+	<!-- CSS -->
+    <link rel="stylesheet" href="css/Search.css">
+	<!-- JS -->
+	<script src="js/global/html.js"></script>
+	<script src="js/global/array.js"></script>
+	<script src="js/Main.js"></script>
+</head>
+
+	<!-- Call and display the searchModel from Main-->
+<body onload="main('search')">
+
+	<!-- Header -->
+	<div id='header' class="ui icon menu">
+		<div class="item">
+			<img src="img/logo.jpg" id="fh_logo_mini">
+		</div>
+		<div class="item" id="header_name"></div>
+		<div class="item" id="header_user"></div>
+		<div id='right_header' class='right menu'>
+			<a class="ui item" onclick="LogOut()">Logout</a>
+		</div>
+	</div>
+
+	<!-- Display HTML UI -->
+<div id="search">
+    <h1>Search Barcode</h1>
+    <div class="ui search">
+        <div class=" ui icon input">
+            <input id="manual_input" class="prompt" type="number" placeholder="Enter Product Barcode">
+            <div onclick="model.ManualSearch(document.getElementById('manual_input').value)"><i class="search icon"></i></div>
+        </div>
+        <div class="results"></div>
+    </div>
+</div>
+
+<div><select disabled id="videoSource"></select></div>
+
+<div id="go" class="ui button">Read Barcode</div>
+<div id="camera">
+    <video muted autoplay id="video" playsinline="true"></video>
+    <canvas id="pcCanvas" width="640" height="480" style="display: none; float: bottom;"></canvas>
+    <canvas id="mobileCanvas" width="240" height="320" style="display: none; float: bottom;"></canvas>
+</div>
+
+</body>
+	<!-- Barcode Scanning JS-->
+<script async src="js/zxing.js"></script>
+<script src="js/video.js"></script>
+</html>

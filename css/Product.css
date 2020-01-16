@@ -1,0 +1,90 @@
+#product_wrap {
+	margin:auto;
+	width:700px;
+}
+#product_box {
+    border-radius: 10px;
+	display:inline-block;
+	margin:auto;
+}
+
+#product_info {
+    font-weight: bold;
+}
+#product_name {
+	text-align:center;
+	font-size: 40px; 
+	text-decoration:underline;
+}
+
+#product_img {
+    width: 200px;
+}
+
+#review_section {
+}
+
+#review {
+    font-size: 40px;
+}
+
+#overall_rating {
+	width:300px;
+    background: teal;
+    color: #F0F0F0;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#overallRating {
+	color: yellow;
+	font-weight: bold;
+}
+
+.review_box {
+	border: 1px solid black;
+    border-radius: 10px;
+	margin: 15px;
+	padding: 3px;
+}
+.review_star {
+	color: teal;
+	font-size: 20px;
+	border-bottom: 1px solid black;
+	padding: 2px 0px 2px 4px;
+}
+.review_word {
+	border-bottom: 1px solid black;
+	padding: 8px 0px 8px 8px;
+	
+}
+.review_user {
+	font-size: 12px;
+	text-align: right;
+	padding: 2px 4px 2px 0px;
+}
+
+#reviews {
+	height:360px;
+	overflow:auto;
+}
+
+
+#ReviewCreateBox {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width: 600px;
+	background-color: white;
+	border: 2px solid black;
+	box-shadow: 0px 2px 8px #000;
+}
+
+#return_search {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  color: white;
+  background-color: red;
+}
